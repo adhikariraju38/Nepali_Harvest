@@ -39,8 +39,8 @@ const Navbar = () => {
             <LinkRoll spy={true} to="topcrops" smooth={true}>
               <li>TopCrops</li>
             </LinkRoll>
-            <LinkRoll spy={true} to="Testimonials" smooth={true}>
-              <li>Today'sWeather</li>
+            <LinkRoll spy={true} to="Contact" smooth={true}>
+              <li>Contact Us</li>
             </LinkRoll>
           </ul>
         </div>
