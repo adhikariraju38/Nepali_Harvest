@@ -5,6 +5,7 @@ import SliderComponent from './Components/Slider/Slider';
 import SeasonalCrop from './Components/SeasonalCropRec/SeasonalCrop';
 import Footer from './Components/Footer/Footer';
 import PlantDoctor from './Components/PlantDoctor/PlantDoctor';
+import TopCrops from './Components/TopCrops/TopCrops';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <SliderComponent/>
       <SeasonalCrop/>
       <PlantDoctor/>
+      <TopCrops/>
       <Footer/>
     </div>
   );
