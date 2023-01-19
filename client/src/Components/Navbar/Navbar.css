@@ -19,10 +19,11 @@
 
 
 .logo>img{
-    height: 3rem;
-    width: 3rem;
+    height: 2.8rem;
+    width: 2.8rem;
     border-radius: 100%;
     margin-left: 2rem;
+    box-shadow: var(--boxShadow);
 }
 
 .n-right{

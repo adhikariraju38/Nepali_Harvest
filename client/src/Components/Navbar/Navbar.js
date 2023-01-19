@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="logo">
           <img src={Logo} alt="" />
         </div>
-        <div className="n-name">FutureFarm</div>
+        <div className="n-name">NepaliHarvest</div>
       </div>
       <div className="n-right">
         <div className="n-list">
