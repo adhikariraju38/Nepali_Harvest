@@ -40,7 +40,7 @@ const Navbar = () => {
               <li>TopCrops</li>
             </LinkRoll>
             <LinkRoll spy={true} to="Contact" smooth={true}>
-              <li>Contact Us</li>
+              <li>ContactUs</li>
             </LinkRoll>
           </ul>
         </div>
