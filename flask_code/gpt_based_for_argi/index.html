@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <h1>Chatbot</h1>
+    <form id="chatbot-form">
+      <label for="message">Enter your message:</label>
+      <input type="text" id="message" name="message">
+      <button type="submit">Send</button>
+    </form>
+    <div id="chatbot-response"></div>
+
+    <script>
+      const form = document.getElementById("chatbot-form");
+      const responseDiv = document.getElementById("chatbot-response");
+
+      form.addEventListener("submit", async e => {
+        e.preventDefault();
+        const message = form.message.value;
+        const response = await fetch("/chatbot", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message })
+        }).then(res => res.json());
+        responseDiv.innerHTML = response.response;
+      });
+    </script>
+  </body>
+</html>
