@@ -1,5 +1,0 @@
-sklearn
-pillow
-flask
-pandas
-pickle
