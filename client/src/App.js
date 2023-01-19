@@ -6,6 +6,7 @@ import SeasonalCrop from './Components/SeasonalCropRec/SeasonalCrop';
 import Footer from './Components/Footer/Footer';
 import PlantDoctor from './Components/PlantDoctor/PlantDoctor';
 import TopCrops from './Components/TopCrops/TopCrops';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <SeasonalCrop/>
       <PlantDoctor/>
       <TopCrops/>
+      <Contact/>
       <Footer/>
     </div>
   );
