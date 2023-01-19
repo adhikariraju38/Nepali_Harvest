@@ -1,0 +1,143 @@
+.predictDisease {
+  /* padding: 1rem 3rem 1rem 3rem; */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #eaf9e7;
+}
+
+.disease-content{
+  padding: 1rem 3rem 1rem 3rem;
+  display: flex;
+  overflow: hidden;
+  background-color: #eaf9e7;
+  height: 110vh;
+}
+
+.pre-left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pre-left > :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10rem;
+}
+
+.pre-left > :nth-child(2) {
+  color: var(--green);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.pre-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-left: 10rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  border: solid var(--green);
+  width: 25rem;
+  /* height: 40rem; */
+}
+
+.pre-right .user {
+  width: 20rem;
+  height: 2rem;
+  padding: 0.3em;
+  outline: none;
+  border: 2px solid var(--green);
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+
+.result {
+  margin-top: 2rem;
+  margin-left: 12rem;
+  margin-right: 10rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.result > img {
+  height:175px;
+  width: 175px;
+  margin-left: -2rem;
+  border: solid var(--green);
+  border-radius: 8px;
+  box-shadow: var(--boxShadow);
+}
+
+.diseaseResult{
+  width: 20rem;
+  height: 2rem;
+  padding: 0.3em;
+  outline: none;
+  border: 2px solid var(--green);
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+ 
+.disease{
+  color: red;
+}
+
+.end{
+margin-bottom: 2rem;}
+
+.description{
+  /* margin-left: 25rem; */
+  display: flex;
+}
+
+.Symptoms{
+  width: 20rem;
+  height: 20rem;
+  padding: 0.3em;
+  outline: none;
+  border: 2px solid var(--green);
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  margin-left: 2rem;
+  flex: 1;
+}
+.Symptoms>h2{
+  margin-left: 10rem;
+  font-weight: bold;
+}
+
+.Precautions{
+  width: 20rem;
+  height: 20rem;
+  padding: 0.3em;
+  outline: none;
+  border: 2px solid var(--green);
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  margin-left: 2rem;
+  flex: 1;
+}
+
+.Precautions>h2{
+  margin-left: 10rem;
+  font-weight: bold;
+}
