@@ -13,30 +13,6 @@ function Chatbox() {
     return num < 10 ? "0" + num : num;
   }
 
-  function writeMessage() {
-    const today = new Date();
-    const newMessage1 = {
-        text: text.trim().replace(/\n/g, '<br>\n'),
-        time: `${addZero(today.getHours())}:${addZero(today.getMinutes())}`,
-        sent: true
-    };
-    setMessages(prevMessages => [...prevMessages, newMessage1]);
-
-
-    setText('');
-}
-
-  function autoReply() {
-    const today = new Date();
-    const newMessage = {
-        text: 'Thank you for your awesome support!',
-        time:` ${addZero(today.getHours())}:${addZero(today.getMinutes())}`,
-        sent: false
-    };
-    setMessages(prevMessages => [...prevMessages, newMessage]);
-
-}
-
   const handleToggleClick = () => {
     setIsOpen(!isOpen);
   };
@@ -44,8 +20,33 @@ function Chatbox() {
   function handleSubmit(e) {
     e.preventDefault();
     if (text.trim().length > 0) {
-      writeMessage();
-      setTimeout(autoReply, 1000);
+      const message = { message: text.trim().replace(/\n/g, '<br>\n') }
+      fetch('http://127.0.0.1:5000/chatbot', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(message)
+      })
+      .then(response => response.json())
+      .then(data => {
+        const today = new Date();
+        const newMessage1 = {
+          text: text.trim().replace(/\n/g, '<br>\n'),
+          time: `${addZero(today.getHours())}:${addZero(today.getMinutes())}`,
+          sent: true
+        };
+        setMessages(prevMessages => [...prevMessages, newMessage1]);
+        setText('');
+        const autoReplyMessage = {
+          text: data.res,
+          time: `${addZero(today.getHours())}:${addZero(today.getMinutes())}`,
+          sent: false
+        };
+        setTimeout(() => {
+          setMessages(prevMessages => [...prevMessages, autoReplyMessage]);
+        }, 1000);
+      })
+    
+      .catch(error => console.error('Error:', error));
     }
   }
 
