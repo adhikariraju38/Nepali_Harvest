@@ -1,10 +1,22 @@
-import React,{useRef} from 'react'
+import React,{useRef,useEffect} from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import "./component-css/NewForm.css";
-import logo from '../img/finallogo.png';
+import "./NewForm.css";
+import logo from '../../img/Logo.png';
+import Alert from '../../Components/Alert/Alert';
 
 const SignInForm = () => {
+  const [alert, setAlert] = useState(null);
+
+  const showAlert = (message, type) => {
+    setAlert({
+      msg: message,
+      type: type,
+    });
+    setTimeout(() => {
+      setAlert(null);
+    }, 4000);
+  };
     const containerRef = useRef(null);
 
     const handleSignUpClick = () => {
@@ -21,7 +33,7 @@ const SignInForm = () => {
       const handleSubmit1=async(e)=>{
         e.preventDefault();
         const {name, email, password}=signupCredential;
-        const response1 = await fetch(`http://localhost:5000/api/auth/createuser`, {
+        const response1 = await fetch(`http://localhost:4000/api/auth/createuser`, {
       
       method: "POST",
       headers: {
@@ -34,17 +46,17 @@ const SignInForm = () => {
     if(json1.success){
       //save the auth token and redirect
       localStorage.setItem('token',json1.authToken);
-      alert("User Created")
       navigate("/")
+      
     }
     else{
-      alert("invalid credentials")
+     showAlert("Already used email","danger");
     }
         }
       
           const handleSubmit=async(e)=>{
           e.preventDefault();
-          const response = await fetch(`http://localhost:5000/api/auth/login`, {
+          const response = await fetch(`http://localhost:4000/api/auth/login`, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -56,12 +68,14 @@ const SignInForm = () => {
             if(json.success){
               //save the auth token and redirect
               localStorage.setItem('token',json.authToken);
+
               navigate("/")
-              alert("Valid credentials")
+             
+              
               
             }
             else{
-              alert("invalid credentials")
+              showAlert("Please Give Valid Credentials or SignUp Now!","danger");
             }
           }
 
@@ -71,9 +85,22 @@ const SignInForm = () => {
     const handleChange1=(e)=>{
       setSignupCredential({...signupCredential,[e.target.name]:e.target.value})
 }
+useEffect(()=>{
+  if(localStorage.getItem('token'))
+  {
+    navigate('/')
+    // eslint-disable-next-line
+  }
+  else{
+    navigate('/login')
+  }
+},[])
 
   return (
+    <>
+    <Alert alert={alert}/>
 <div className="container1" ref={containerRef}>
+  
       <div className="forms-container">
         <div className="signin-signup">
           <form onSubmit={handleSubmit} className="sign-in-form">
@@ -134,6 +161,7 @@ const SignInForm = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

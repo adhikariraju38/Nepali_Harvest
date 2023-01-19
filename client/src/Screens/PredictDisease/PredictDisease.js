@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './PredictDisease.css';
 import Footer from './../../Components/Footer/Footer';
-import Navbar from '../../Components/Navbar/Navbar';
+import OtherNav from '../../Components/OtherNav/OtherNav';
+import { useNavigate } from "react-router-dom";
 
 const PredictDisease = () => {
+  let navigate=useNavigate();
   const [prediction, setPrediction] = useState('');
   const [imageUrl, setImageUrl] = useState('');
   const [image, setImage] = useState(null);
@@ -32,9 +34,20 @@ const PredictDisease = () => {
     showImg(true);
   };
 
+  useEffect(()=>{
+    if(localStorage.getItem('token'))
+    {
+      navigate('/plantdoctor')
+      // eslint-disable-next-line
+    }
+    else{
+      navigate('/login')
+    }
+  },[])
+
   return (
     <>
-      <Navbar />
+      <OtherNav/>
       <div className="predictDisease">
         <div className="disease-content">
           <div className="pre-left">

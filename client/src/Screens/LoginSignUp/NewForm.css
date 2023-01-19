@@ -74,6 +74,7 @@ form.sign-in-form {
   color: #013237;
   transition: 0.5s;
   font-size: 1.1rem;
+  margin-top: -0.01rem;
 }
 
 .input-field input {
@@ -205,7 +206,7 @@ form.sign-in-form {
   padding: 0.7rem 0;
 }
 
-.btn.transparent {
+.transparent {
   margin: 0;
   background: none;
   border: 2px solid #eaf9e7;

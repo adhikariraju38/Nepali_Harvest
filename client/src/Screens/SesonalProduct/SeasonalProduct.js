@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './SeasonalProduct.css';
 import Footer from './../../Components/Footer/Footer';
-import Navbar from './../../Components/Navbar/Navbar';
+import OtherNav from './../../Components/OtherNav/OtherNav';
+import { useNavigate } from "react-router-dom";
 
 function SeasonalProduct() {
+  let navigate=useNavigate();
   const [N, setN] = useState('');
   const [P, setP] = useState('');
   const [K, setK] = useState('');
@@ -37,12 +39,20 @@ function SeasonalProduct() {
       console.error(err);
     }
   };
+  useEffect(()=>{
+    if(localStorage.getItem('token'))
+    {
+      navigate('/seasonalproduct')
+      // eslint-disable-next-line
+    }
+    else{
+      navigate('/login')
+    }
+  },[])
 
   return (
     <>
-    <Navbar/>
-      {/* <OtherNav />
-      <NewNav/> */}
+      <OtherNav />
       <div className="predict">
         <div className="seasonalPrediction">
           <div className="ses-left">

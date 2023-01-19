@@ -82,8 +82,8 @@ select {
 /* CHATBOX */
 .chatbox-wrapper {
 	position: fixed;
-	bottom: 4rem;
-	right: 3rem;
+	bottom: 2rem;
+	right: 1rem;
 	width: 3rem;
 	height: 3rem;
 }
