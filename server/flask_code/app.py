@@ -24,6 +24,7 @@ import torchvision.transforms as transforms   # for transforming images into ten
 from torchvision.utils import make_grid       # for data checking
 from torchvision.datasets import ImageFolder  # for working with classes and images
 from torchsummary import summary  
+import openai
 
 
 # Load data
@@ -267,16 +268,6 @@ def predict_image(img, model):
 app = Flask(__name__, template_folder='.')
 CORS(app)
 
-# @app.route('/')
-# def index():
-#     return render_template('index.html')
-
-# @app.route('/predict', methods=['POST'])
-# def predict():
-#     data = request.form.to_dict()
-#     data = pd.DataFrame(data, index=[0])
-#     prediction = pipe.predict(data)[0]
-#     return render_template('index.html', prediction=prediction)
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -304,7 +295,36 @@ def predict_json():
     pred_dict = {'prediction': prediction, 'probability': prediction_proba.tolist()}
     return jsonify(pred_dict)
 
+#GPT
+openai.api_key = "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"
 
+def respond(prompt):
+    completions = openai.Completion.create(
+        engine="text-davinci-002",
+        prompt=prompt,
+        max_tokens=2048,
+        n=1,
+        stop=None,
+        temperature=0.5,
+    )
+
+    message = completions.choices[0].text
+    return message
+
+@app.route("/chatbot", methods=["POST"])
+def chatbot():
+    message = request.json['message']
+    if message.lower() == "bye":
+        return jsonify({"res": "Chatbot: Goodbye! Have a great day!"})
+        
+    elif message.lower() == ('hi'):
+        return jsonify({"res": "Ask me about agriculture product and its solution only."})
+        #print("Ask me about agriculture product and its solution")
+    
+    else:
+        #print("Chatbot: " + respond(message))
+        response = respond(message + ',only related to agriculture.')
+        return jsonify({"res": response})
 
 if __name__ == '__main__':
     app.run(debug=True)
