@@ -1,7 +1,7 @@
 import React,{useRef} from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import "./component-css/NewForm.css";
+import "./NewForm.css";
 import logo from '../img/finallogo.png';
 
 const SignInForm = () => {
