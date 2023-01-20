@@ -34,7 +34,7 @@ const PlantDoctor = () => {
 
       </div>
 
-      {/* right side */}
+      {/* right side */} 
 
       <div className="w-right">
         <motion.div

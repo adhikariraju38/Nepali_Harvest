@@ -27,7 +27,7 @@ const OtherNav = () => {
           <img src={Logo} alt="" onClick={goHome} />
         </div>
         <div className="n-name" onClick={goHome}>
-          FutureFarm
+          NepaliHarvest
         </div>
       </div>
       <div className="n-right">
@@ -42,7 +42,6 @@ const OtherNav = () => {
               <li onClick={goPlantDoctor}>PlantDoctor</li>
 
           </ul>
-          <div class="animation start-home"></div>
         </div>
         {/* <button className="button n-button">Login</button> */}
         {!localStorage.getItem('token') ? (

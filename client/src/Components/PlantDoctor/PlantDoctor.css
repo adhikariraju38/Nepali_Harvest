@@ -1,7 +1,7 @@
 .works {
   padding: 0 3rem 0 3rem;
   display: flex;
-  height: 70vh;
+  height: 70vh; 
 }
 
 .w-left {
@@ -32,7 +32,7 @@
 
 .w-right {
   position: relative;
-  margin-left: 8rem;
+  margin-left: 15rem;
 }
 
 .w-mainCircle {
@@ -110,13 +110,24 @@
   }
 
   .w-right {
-    display: flex;
+    /* display: flex;
     align-items: flex-start;
     justify-content: start;
-    transform: scale(0.7);
+    transform: scale(0.7); */
+    /* margin-right: 5rem; */
+    transform: scale(0.5);
+    margin-left: 0rem;
+    margin-top: -4rem;
+    
+  }
+
+  .w-left{
+    margin-top: 18rem;
   }
   .w-mainCircle {
     position: static;
+    border-radius: 100%;
+    
   }
   .w-backCircle {
     left: 8rem !important;

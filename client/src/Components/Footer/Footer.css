@@ -25,6 +25,13 @@
 
 @media screen and (max-width: 480px){
     .f-content{
-      transform: scale(.5);
+        margin-left: 3.5rem;
+        transform: scale(0.8);
+
+        
+    }
+    .footer{
+        transform: scale(1.2);
+        height: 6rem;
     }
   }

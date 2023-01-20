@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Diseases from './Diseases.json'
 import './PredictDisease.css';
 import Footer from './../../Components/Footer/Footer';
 import OtherNav from '../../Components/OtherNav/OtherNav';
@@ -78,8 +79,8 @@ const PredictDisease = () => {
               <div className="result">
                 {imageUrl && <img src={imageUrl} alt="Preview" />}
                 <span className="diseaseResult">
-                  Your Plant is Suffering From
-                  <span className="disease">{prediction}</span>
+                  <b>Prediction:</b> {prediction}
+                  {/* <span className="disease"></span> */}
                 </span>
               </div>
             ) : (
@@ -87,32 +88,23 @@ const PredictDisease = () => {
             )}
           </div>
         </div>
-
-        {img ? (
+        {img && Diseases.diseases[prediction]? (
           <div className="description">
-            <span className="Symptoms">
-              <h2>Symptoms</h2>
+
+              <span className="Symptoms">
+              <h2>Cure</h2>
               <p>
-                1. Rajeev
-                <br />
-                2. Rajeev
-                <br />
-                3. Rajeev
-                <br />
+              {Diseases.diseases[prediction].cure}
               </p>
             </span>
             <span className="Precautions">
-              <h2>Precautions</h2>
+              <h2>Solution</h2>
               <p>
-                1. Rajeev
-                <br />
-                2. Rajeev
-                <br />
-                3. Rajeev
-                <br />
-              </p>
-            </span>
-          </div>
+
+          {Diseases.diseases[prediction].solution} </p>
+        </span>
+      </div>
+    
         ) : (
           <h2></h2>
         )}

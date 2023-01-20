@@ -78,10 +78,22 @@
 
 @media screen and (max-width: 480px) {
   .t-wrapper {
-    padding: 0;
+    padding: 0; 
+    transform: scale(0.5);
+    flex-direction: column; 
+    /* margin-right: 3rem; */
+    margin-left: -6rem;
   }
+
+
+  .s-button{
+    /* margin-right: 25rem; */
+  }
+
+  
   .testimonial > img {
     width: 70px;
     height: 70px;
   }
+
 }

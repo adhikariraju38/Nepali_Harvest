@@ -1,0 +1,93 @@
+{
+    "plants": [
+        {
+            "name": "Rice",
+            "description": "Rice is a type of grain that is the most important staple food for a large part of the world's human population. It is the seed of the grass species Oryza sativa."
+        },
+        {
+            "name": "Maize",
+            "description": "Maize, also known as corn, is a grain that is one of the most widely cultivated crops in the world. It is a staple food in many countries and is also used to feed livestock."
+        },
+        {
+            "name": "Jute",
+            "description": "Jute is a long, soft, shiny vegetable fiber that can be spun into coarse, strong threads. It is produced from plants in the genus Corchorus, which is in the mallow family Malvaceae."
+        },
+        {
+            "name": "cotton",
+            "description": "Cotton is a soft, fluffy staple fiber that grows in a boll, or protective case, around the seeds of cotton plants of the genus Gossypium."
+        },
+        {
+            "name": "coconut",
+            "description": "Coconut is the fruit of the coconut palm tree, which is grown in tropical regions around the world. The fruit is used for its water, milk, and meat."
+        },
+        {
+            "name": "papaya",
+            "description": "Papaya is a fruit that is native to tropical America and is now grown in many tropical and subtropical regions of the world. It is a large, herbaceous plant with a single stem that can grow up to 20 feet tall."
+        },
+        {
+            "name": "Orange",
+            "description": "Orange is a citrus fruit that is known for its sweet, juicy, and acid flesh."
+        },
+        {
+            "name": "Apple",
+            "description": "Apple is a round fruit that comes in many different varieties, each with their own unique flavor and texture."
+        },
+        {
+            "name": "Muskmelon",
+            "description": "Muskmelon is a type of melon that has a sweet, juicy, and fragrant flesh."
+        },
+        {
+            "name": "Watermelon",
+            "description": "Watermelon is a large, round fruit that has a hard rind and a juicy, sweet interior."
+        },
+        {
+            "name": "Grapes",
+            "description": "Grapes are small round or oval berries that grow in clusters on a vine. They are used to make wine, jelly, juice, and raisins."
+        },
+        {
+            "name": "Mango",
+            "description": "Mango is a juicy stone fruit that comes in many different varieties. It is native to South Asia and is now grown in many tropical regions around the world."
+        },
+        {
+            "name": "Banana",
+            "description": "Banana is a herbaceous perennial plant that is native to Southeast Asia. It is one of the oldest cultivated plants and is now grown in many tropical regions around the world."
+        },
+        {
+           
+            "name": "Pomegranate",
+            "description": "Pomegranate is a round fruit that has a tough red or yellow-red skin and a juicy, seed-filled interior."
+            },
+            {
+            "name": "Lentil",
+            "description": "Lentil is a type of legume that is high in protein and is used in many different cuisines."
+            },
+            {
+            "name": "Blackgram",
+            "description": "Blackgram, also known as urdbean is a legume that is native to India and is used in many different cuisines."
+            },
+            {
+            "name": "Mungbean",
+            "description": "Mungbean, also known as green gram, is a legume that is native to India and is used in many different cuisines."
+            },
+            {
+            "name": "Mothbeans",
+            "description": "Mothbeans, also known as matki, is a legume that is native to India and is used in many different cuisines."
+            },
+            {
+            "name": "Pigeonpeas",
+            "description": "Pigeonpeas, also known as toor dal, is a legume that is native to India and is used in many different cuisines."
+            },
+            {
+            "name": "Kidney beans",
+            "description": "Kidney beans, also known as Rajma, is a legume that is native to America and is used in many different cuisines."
+            },
+            {
+            "name": "Chickpea",
+            "description": "Chickpea, also known as garbanzo bean, is a legume that is native to the Mediterranean and is used in many different cuisines."
+            },
+            {
+            "name": "Coffee",
+            "description": "Coffee is a beverage made from the roasted seeds of the Coffea plant. It is one of the most popular drinks in the world."
+            }
+            ]
+            }

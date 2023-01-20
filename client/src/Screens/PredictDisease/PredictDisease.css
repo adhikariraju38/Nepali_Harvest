@@ -79,9 +79,10 @@
 }
 
 .diseaseResult{
-  width: 20rem;
-  height: 2rem;
-  padding: 0.3em;
+  /* width: 20rem; */
+  /* height: 2rem; */
+  padding: 0.3rem;
+  margin-right: 2rem;
   outline: none;
   border: 2px solid var(--green);
   border-radius: 8px;
@@ -105,7 +106,7 @@ margin-bottom: 2rem;}
 
 .Symptoms{
   width: 20rem;
-  height: 20rem;
+  /* height: 20rem; */
   padding: 0.3em;
   outline: none;
   border: 2px solid var(--green);
@@ -118,13 +119,13 @@ margin-bottom: 2rem;}
   flex: 1;
 }
 .Symptoms>h2{
-  margin-left: 10rem;
+  margin-left: 0rem;
   font-weight: bold;
 }
 
 .Precautions{
   width: 20rem;
-  height: 20rem;
+  /* height: 20rem; */
   padding: 0.3em;
   outline: none;
   border: 2px solid var(--green);
@@ -138,6 +139,6 @@ margin-bottom: 2rem;}
 }
 
 .Precautions>h2{
-  margin-left: 10rem;
+  margin-left: 0rem;
   font-weight: bold;
 }

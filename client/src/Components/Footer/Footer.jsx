@@ -10,7 +10,7 @@ function Footer() {
     <div className="footer">
       {/* <img src={wave} alt="" style={{ width: '100%' }} /> */}
       <div className="f-content">
-        <span>futurefarm@ioepc.edu.np</span>
+        <span>nepaliharvest@gmail.com</span>
         <span>@copyright 2023</span>
         <div className="f-icons">
           <a href="https://www.instagram.com/rajeevyadav__/?hl=en">

@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import './SeasonalProduct.css';
+import Products from './Products.json'
 import Footer from './../../Components/Footer/Footer';
 import OtherNav from './../../Components/OtherNav/OtherNav';
 import { useNavigate } from "react-router-dom";
@@ -15,6 +16,7 @@ function SeasonalProduct() {
   const [rainfall, setRainfall] = useState('');
   const [prediction, setPrediction] = useState('');
 
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -131,25 +133,21 @@ function SeasonalProduct() {
               <input type="submit" value="Submit" className="button last" />
 
               {/* Plant Predicted Result */}
+
+              
               {prediction && (
                 <span className="pre-result">
                   Most Suitable Plant: <span className="plant">{prediction}</span>
                 </span>
               )}
-              {/* <span className="pre-result">
-                Most Suitable Plant: <span className="plant">Papaya</span>
-              </span> */}
-              {/* {prediction && <h2>Prediction: {prediction}</h2>} */}
             </form>
           </div>
         </div>
 
-
-        {/* Description For Predicted Result */}
         {prediction && <span className="plantDescription">
-          <h2 className="p-desc">Description</h2>
-          <p>Papaya is good for health</p>
-        </span>}
+<h2 className="p-desc">Description</h2>
+<p>{Products.plants.filter(plant=> plant.name===prediction)[0].description}</p>
+</span>}
 
         {/* <span className="plantDescription">
           <h2 className="p-desc">Description</h2>

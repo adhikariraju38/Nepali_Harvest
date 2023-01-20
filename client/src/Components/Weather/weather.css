@@ -100,3 +100,11 @@ i {
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .box{
+    transform: scale(1);
+    height: 20rem;
+    margin-left: 7rem;;
+  }
+}

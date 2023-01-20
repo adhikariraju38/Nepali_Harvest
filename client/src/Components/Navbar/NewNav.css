@@ -1,0 +1,127 @@
+.nav-header {
+    /* display: flex;
+    align-items: center;
+    z-index: 1;
+    justify-content: space-between; */
+
+    
+    flex:1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    margin-left: -7rem;
+    
+}
+
+.nav-toggle {
+    font-size: 1.5rem;
+    color: black;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+nav {
+    background: #C0e6ba;
+    overflow: hidden;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.sign-up{
+    display: none;
+}
+@media screen and (min-width: 800px) {
+    .nav-center {
+        max-width: 1170px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+
+    .nav-header {
+        padding: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .sign-up{
+        display:block;
+    }
+
+    .links-container {
+        height: auto !important;
+    }
+
+    .links {
+        display: flex;
+    }
+
+    .links a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    .links a:hover {
+        padding: auto;
+        background: transparent;
+    }
+}
+
+
+.nav-toggle:hover {
+    color: black;
+    transform: rotate(90deg);
+}
+
+.logo {
+    height: 60px;
+}
+
+.links a {
+    /* color: hsl(0, 0%, 100%); */
+    color: black;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing:0.1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+}
+
+.links a:hover {
+    background: #013a41;
+    color: hsl(209, 100%, 50%);
+}
+
+.social-icons {
+    display: none;
+}
+
+.links-container {
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.show-container {
+    height: 10rem;
+}
+.btn {
+    background: var(--clr-primary-5);
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius);
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing:0.1rem;
+    border-color: transparent;
+    cursor: pointer;
+    margin:auto;
+    font-size: 1rem;
+}

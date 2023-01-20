@@ -1,0 +1,64 @@
+{
+    "diseases": {
+        "Apple___Apple_scab": {
+            "solution": "The best solution for Apple scab is to plant resistant varieties and to practice good sanitation by removing fallen leaves and fruit from the ground. You can also use fungicides to prevent the disease from spreading.",
+            "cure": "Fungicides like captan, myclobutanil, and propiconazole are effective in controlling apple scab."
+        },
+        "Apple___Black_rot": {
+            "solution": "The best solution for black rot is to plant resistant varieties and to practice good sanitation by removing fallen leaves and fruit from the ground. You can also use fungicides to prevent the disease from spreading.",
+            "cure": "Fungicides like captan, myclobutanil, and propiconazole are effective in controlling black rot."
+        },
+        "Apple___Cedar_apple_rust": {
+            "solution": "The best solution for cedar apple rust is to plant resistant varieties and to remove any nearby cedar trees. You can also use fungicides to prevent the disease from spreading.",
+            "cure": "Fungicides like captan, myclobutanil, and propiconazole are effective in controlling cedar apple rust."
+        },
+        "Apple___healthy": {
+            "solution": "There is no solution needed as the apple tree is healthy.",
+            "cure": "N/A"
+        },
+        "Blueberry___healthy": {
+            "solution": "There is no solution needed as the blueberry plant is healthy.",
+            "cure": "N/A"
+        },
+        "Cherry___Powdery_mildew": {
+            "solution": "The best solution for powdery mildew is to plant resistant varieties and to provide good air circulation around the plants. You can also use fungicides to prevent the disease from spreading.",
+            "cure": "Fungicides like sulfur and potassium bicarbonate are effective in controlling powdery mildew."
+        },
+        "Cherry___healthy": {
+            "solution": "There is no solution needed as the cherry tree is healthy.",
+            "cure": "N/A"
+        },
+        "Corn___Cercospora_leaf_spot Gray_leaf_spot": {
+            "solution": "The best solution for Cercospora leaf spot and gray leaf spot is to plant resistant varieties and to practice good sanitation by removing fallen leaves and plant debris from the ground. You can also use fungicides to prevent the disease from spreading.",
+            "cure": "Fungicides like chlorothalonil, mancozeb, and propiconazole are effective in controlling Cercospora leaf spot and gray leaf spot."
+        },
+        "Corn___Common_rust": {
+            "solution": "The best solution for common rust is to plant resistant varieties and to practice good sanitation by removing fallen leaves and plant debris from the ground. You can also use fungicides to prevent the disease from spreading.",
+            "cure": "Fungicides like chlorothalonil, mancozeb, and propiconazole are effective in controlling common rust."
+        },
+        "Corn___Northern_Leaf_Blight": {
+            "solution": "The best solution for Northern leaf blight is to plant resistant varieties and to practice good sanitation by removing fallen leaves and plant debris from the ground. You can also use fungicides to prevent the disease from spreading.",
+            "cure": "Fungicides like chlorothalonil, mancozeb, and propiconazole are effective in controlling Northern leaf blight."
+            },
+            "Corn___healthy": {
+            "solution": "There is no solution needed as the corn plant is healthy.",
+            "cure": "N/A"
+            },
+            "Grape___Black_rot": {
+            "solution": "",
+            "cure": ""
+            },
+            "Grape___Esca_(Black_Measles)": {
+            "solution": "",
+            "cure": ""
+            },
+            "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+            "solution": "",
+            "cure": ""
+            },
+            "Grape___healthy": {
+            "solution": "There is no solution needed as the corn plant is healthy.",
+            "cure": "N/A"
+            }
+            }
+            }
