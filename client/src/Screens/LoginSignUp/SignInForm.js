@@ -2,8 +2,7 @@ import React,{useRef,useEffect} from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./NewForm.css";
-import logo from '../../img/Logo.png';
-import Alert from '../../Components/Alert/Alert';
+import logo from '../img/finallogo.png';
 
 const SignInForm = () => {
   const [alert, setAlert] = useState(null);
