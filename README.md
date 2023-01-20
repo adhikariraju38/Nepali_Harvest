@@ -23,12 +23,12 @@ The objectives of the proposed web page or app are:
 
 ####### Frontend
 
-* React Js
+* React JS
 
 ####### Backend
 
 * Flask
-* Hello
+* ExpressJS
 
 ####### Machine Learning
 
@@ -51,3 +51,12 @@ There are several potential business models that could be used for this product:
     4. Data-driven model: In this model, the company would collect data from the farmers who use the app or web page and then sell insights and analysis derived from that data to other companies in the agriculture industry.
 
     5. Partnership model: In this model, the company would partner with agricultural research institutions, seed companies, and fertilizer and pesticide companies to provide farmers with a complete       solution for crop management and disease prediction.
+
+
+## Future Idea
+
+. A simple and efficient algorithm based on Nepali data.
+. Platform for farmers and users to add and purchase products.
+. Automatic crop monitoring system.
+. Wide range of crops and fruits catering to the specific needs of Nepali farmers.
+. User-friendly interface for easy navigation and transactions.
